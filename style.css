@@ -3,3 +3,102 @@
     margin: 0;
     padding: 0;
 }
+
+main { 
+    font-family: 'Poppin', sans-serif;
+    background-image: url(/images/bg-intro-mobile.png);
+    background-color: hsl(0, 100%, 74%) ;
+}
+
+label { 
+    display: none;
+}
+
+input {
+    width: 100%;
+    margin: 1em 0;
+    padding: 0.5em;
+    font-weight: 600;
+}
+
+footer{
+    display: none;
+}
+
+.container { 
+    width: 80%;
+    max-width: 28rem;
+    margin: 0 auto;
+    padding: 3em 2em;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.lead, .trial {
+    text-align: center;
+    color: white;
+}
+
+.lead__heading {
+    font-weight: 600;
+
+}
+
+.lead__text{
+    margin: 1.5em 0 3em 0;
+    line-height: 1.5rem;
+}
+
+.trial__btn {
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 0.5rem;
+    border: none;
+    padding: 1em 5em;
+    width: 100%;
+    box-shadow: 0 3px 5px hsl(249, 10%, 26%);
+}
+
+.trial__btn--accent{
+    font-weight: 600;
+}
+
+.form { 
+    margin-top: 1.5em;
+    background-color: white;
+    border-radius: 0.5em;
+    border-color: hsl(246, 25%, 77%);
+    padding: 2em;
+    color: hsl(246, 25%, 77%);
+    box-shadow: 0 4px 5px hsl(249, 10%, 26%);
+}
+
+.form__btn {
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 1em 4em;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 0 3px 1px hsl(154, 59%, 51%);
+
+}
+
+.form__btn--text{
+    margin-top: 1em;
+    font-size: 0.75rem;
+}
+
+.form__btn--link{
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+
+}
+
