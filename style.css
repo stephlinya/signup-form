@@ -4,9 +4,9 @@
     padding: 0;
 }
 
-main { 
+body { 
     font-family: 'Poppin', sans-serif;
-    background-image: url(/images/bg-intro-mobile.png);
+    background-image: url(./images/bg-intro-mobile.png);
     background-color: hsl(0, 100%, 74%) ;
 }
 
@@ -26,10 +26,10 @@ footer{
 }
 
 .container { 
-    width: 80%;
-    max-width: 28rem;
+    width: 70%;
+    max-width: 22rem;
     margin: 0 auto;
-    padding: 3em 2em;
+    padding: 2em 2em;
 }
 
 .flex {
@@ -55,18 +55,19 @@ footer{
 .trial__btn {
     cursor: pointer;
     text-decoration: none;
-    text-align: center;
     color: white;
     background-color: hsl(248, 32%, 49%);
     border-radius: 0.5rem;
     border: none;
-    padding: 1em 5em;
+    padding: 2em 2em;
     width: 100%;
     box-shadow: 0 3px 5px hsl(249, 10%, 26%);
+    line-height: 1.3rem;
 }
 
 .trial__btn--accent{
     font-weight: 600;
+    
 }
 
 .form { 
@@ -84,10 +85,12 @@ footer{
     color: white;
     border-radius: 0.5rem;
     border: none;
-    padding: 1em 4em;
+    padding: 1em 2em;
     width: 100%;
     cursor: pointer;
-    box-shadow: 0 3px 1px hsl(154, 59%, 51%);
+    box-shadow: 0 3px 1px hsl(154, 59%, 55%);
+    text-transform: uppercase;
+    font-weight: 500;
 
 }
 
@@ -99,6 +102,27 @@ footer{
 .form__btn--link{
     text-decoration: none;
     color: hsl(0, 100%, 74%);
-
+    
 }
 
+@media (min-width: 800px){
+    body {
+        background-image: url(./images/bg-intro-desktop.png);
+        min-height: 100%;
+    }
+
+    .flex {
+        flex-direction: row;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        border: 1px solid blue;
+        
+    }
+
+    .lead {
+        align-self: center;
+    }
+}
