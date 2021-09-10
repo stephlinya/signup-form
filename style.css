@@ -17,14 +17,20 @@ label {
 input {
     width: 100%;
     margin: 0.5em 0;
-    padding: 0.5em;
+    padding: 1em;
     font-weight: 600;
     border: 1px solid hsl(246, 25%, 77%);
     border-radius: 0.5em;
 }
 
+input:focus {
+    outline-color: hsl(249, 10%, 26%);
+}
+
 ::placeholder {
-    color: hsl(246, 25%, 77%);
+    color: hsl(249, 10%, 26%);
+    font-weight: 400;
+    padding-left: 1em;
 
 }
 
@@ -61,18 +67,13 @@ footer{
     background-color: hsl(248, 32%, 49%);
     border-radius: 0.5rem;
     border: none;
-    padding: 2em 2em;
+    padding: 2em 4em;
     width: 100%;
     box-shadow: 0 3px 5px hsl(249, 10%, 26%);
     line-height: 1.3rem;
 }
 
-.trial__btn--accent{
-    font-weight: 600;
-    
-}
-
-.form { 
+form { 
     margin-top: 1.5em;
     background-color: white;
     border-radius: 0.5em;
@@ -100,6 +101,7 @@ footer{
 .form__btn--text{
     margin-top: 1em;
     font-size: 0.75rem;
+    font-weight: 500;
 }
 
 .form__btn--link{
@@ -153,5 +155,6 @@ footer{
 
     .trial__btn{
         padding: 1em 2em;
+        display: inline-block;
     }
 }
