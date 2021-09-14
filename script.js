@@ -8,6 +8,11 @@ let lastNameError = document.getElementById('last-name__error');
 let emailError = document.getElementById('email__error');
 let passwordError = document.getElementById('password__error');
 
+function validateEmail(email){
+    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+
+}
+
 form.addEventListener('submit', (e) => {
     let firstNameMessages = [];
     let lastNameMessages = [];
@@ -23,7 +28,11 @@ form.addEventListener('submit', (e) => {
     }
 
     if (email.value === '' || email.value == null) {
-        emailMessages.push('Email cannot be empty');
+        emailMessages.push('Email cannot be empty'); 
+    } else if(!validateEmail(email)){
+            emailMessages.push('Email is not valid');
+    } else {
+        emailMessages.push('Email is valid');
     }
 
     if (password.value === '' || password.value == null) {
