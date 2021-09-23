@@ -7,7 +7,7 @@
 body { 
     font-family: 'Poppin', sans-serif;
     background-image: url(./images/bg-intro-mobile.png);
-    background-color: hsl(0, 100%, 74%) ;
+    background-color: hsl(0, 100%, 74%);
 }
 
 label { 
@@ -23,9 +23,20 @@ input {
     border-radius: 0.5em;
 }
 
-input:focus {
-    outline-color: hsl(249, 10%, 26%);
+.error { 
+    border: 1px solid hsl(0, 100%, 74%);
+    background-image: url(./images/icon-error.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-right: 3px;
 }
+
+.focus {
+    outline-color: hsl(249, 10%, 26%);
+    background-image: none;
+}
+
 
 ::placeholder {
     color: hsl(249, 10%, 26%);
@@ -33,7 +44,14 @@ input:focus {
     padding-left: 1em;
 
 }
-
+/*
+input:invalid{
+    background-image: url(./images/icon-error.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right;
+    
+} */
 footer{
     display: none;
 }
@@ -115,6 +133,7 @@ form {
     font-size: 0.75em;
     color: hsl(0, 100%, 74%);
     font-style: italic;
+    
 }
 
 @media (min-width: 800px){
